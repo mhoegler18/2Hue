@@ -6,6 +6,8 @@
 
 package htl.grieskirchen;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author hoegl
@@ -16,7 +18,16 @@ public class pos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        ArrayList<String>liste = new ArrayList<String>();
+        liste.add("memmet");
+        
+        for (String string : liste) {
+            System.out.println(liste);
+        }
+        liste.forEach((String s)-> System.out.println(s));
+        
+        
     }
     
 }
