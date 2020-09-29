@@ -12,4 +12,13 @@ package htl.grieskirchen;
  */
 public class NumberTester {
     
+    String fileName;
+    NumberTester oddTester;
+
+    public NumberTester(String fileName) {
+        this.fileName = fileName;
+    }
+    public void setOddEvenTester(NumberTester oddTester){
+     this.oddTester = oddTester;
+    }
 }
