@@ -76,19 +76,19 @@ public class NumberTester {
             String tmp = sc.nextLine();
             String[] arr = tmp.split(cvsSplit);
             if(arr.length>1){
-            int a = Integer.parseInt(arr[0]);
-            int untereLine = Integer.parseInt(arr[1]);
-            if (a < 4 && a != 0) {
-                switch(a){
+            int spalte1 = Integer.parseInt(arr[0]);
+            int spalte2 = Integer.parseInt(arr[1]);
+            if (spalte1 < 4 && spalte1!= 0) {
+                switch(spalte1){
                     case 1:
-                        System.out.println(oddTester.testNumber(untereLine));
+                        oddTester.testNumber(spalte2);
                         break;
                     case 2:
-                        System.out.println(primeTester.testNumber(untereLine));
+                        primeTester.testNumber(spalte2);
                         break;
                         
                     case 3:
-                        System.out.println(palindromeTester.testNumber(untereLine));
+                        palindromeTester.testNumber(spalte2);
                         break;
                 }
             }
